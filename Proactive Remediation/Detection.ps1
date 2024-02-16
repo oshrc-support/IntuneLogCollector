@@ -573,18 +573,18 @@ Process {
     }
 
     # Enter the GetSASUri function URI
-    $FunctionGetSASUri = "<enter_uri_for_function_GetSASUri>"
+    $FunctionGetSASUri = "secrets.FUNCTION_GET_SAS_URI "
 
     # Enter the GetBlobContent function URI
-    $FunctionGetBlobContent = "<enter_uri_for_function_GetBlobContent>"
+    $FunctionGetBlobContent = "secrets.FUNCTION_GET_BLOB_CONTENT"
 
     # Enter Storage Account details for the account where logs files will be uploaded
-    $StorageAccountLogsName = "<enter_storage_account_name>" # e.g. "samplestorageaccountname"
-    $StorageAccountLogsContainerName = "<enter_storage_account_container_name>" # e.g. "logs"
+    $StorageAccountLogsName = "secrets.STORAGE_ACCOUNT_NAME" # e.g. "samplestorageaccountname"
+    $StorageAccountLogsContainerName = "secrets.STORAGE_ACCOUNT_LOGS_CONTAINER_NAME" # e.g. "logs"
     
     # Enter Storage Account details for the account where the logs gather rules file is located
-    $StorageAccountRulesName = "<enter_storage_account_name>" # e.g. "samplestorageaccountname"
-    $StorageAccountRulesContainerName = "<enter_storage_account_container_name>" # e.g. "rules"
+    $StorageAccountRulesName = "secrets.STORAGE_ACCOUNT_NAME" # e.g. "samplestorageaccountname"
+    $StorageAccountRulesContainerName = "secrets.STORAGE_ACCOUNT_RULES_CONTAINER_NAME" # e.g. "rules"
     $StorageAccountRulesFileName = "LogsGatherRules.json" # Change this value if the file name is different than what's provided in the solution
 
     # Initial logging details for detection script
